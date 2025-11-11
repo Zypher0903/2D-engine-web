@@ -1,0 +1,10 @@
+CREATE DATABASE user_data;
+USE user_data;
+
+CREATE TABLE user_inputs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    code TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
